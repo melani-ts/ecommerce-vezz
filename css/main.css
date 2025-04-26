@@ -1,0 +1,100 @@
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(22, 21, 21);
+        }
+        .container{
+            width: 50%;
+            border: 1px solid black;
+            padding: 15px;
+            height: 70vh;
+            display: flex;
+            border-radius: 10px;
+            background-color: black;
+        }
+        .f-ingreso{
+            width: 50%;
+        }
+        .bder{
+            border-right: 3px solid rgb(128,228,143);
+        }
+        h2{
+            margin: 5px 5px;
+            text-align: center;
+            color: rgb(128,228,143);
+        }
+        label{
+            font-family: 'Lato';
+            padding: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: aliceblue;
+
+            outline: none;
+
+        }
+        input[type="email"],input[type="password"]{
+            padding: 10px;
+            border: 1px solid rgb(128,228,143);
+            border-radius: 10px;     
+            width: 100%;    
+            transition: border-color 0.3s ease;   
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+        }
+        form *{
+            margin-top: 15px;
+        }
+        form{
+            width: 80%;
+            height: 90%;
+        }
+        input[type="submit"]{
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;     
+            width: 100%; 
+            background-color: rgb(128,228,143);    
+            margin: auto;  
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(17, 152, 38);
+            
+        }
+
+        .c-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .linea-gradiente {
+      width: 100%;
+      background: linear-gradient(90deg, rgb(0, 0, 0),rgb(0, 0, 0),  #273a25);
+      background-size: 600% 100%;
+      animation: moverGradiente 10s linear infinite;
+    }
+
+    @keyframes moverGradiente {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 70%;
+      }
+      100% {
+        background-position: 50% 10%;
+
+      }
+      }

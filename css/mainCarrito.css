@@ -1,0 +1,102 @@
+           *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: 'Lato', sans-serif;
+        }
+        .body-container{
+            width: 100wh;
+            height: 100vh;
+            background-image: url(pry23.png); /* Reemplaza con la URL de tu imagen */
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    /* Barra de navegación */
+    .navbar {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8); /* Semitransparente */
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      z-index: 999;
+      height: 10%;
+    }
+    .navbar .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: rgb(128,228,143);
+    }
+
+    /* Espacio para contenido */
+    .content {
+      padding-top: 100px;
+      text-align: center;
+      color: white;
+    }
+    .container-70{
+        padding: 50px;
+        width: 70%;
+    }
+    .container-30{
+        padding: 50px;
+        width: 30%;
+        background-color: rgb(235, 235, 235);
+        border-left: 3px solid black;
+        margin-right: 30px;
+    }
+
+    .c_carrito{
+        margin-top: 100px;
+        width: 100%;
+        display: flex;
+    }
+    .tarjeta_carrito{
+        display: flex;
+        width: 100%;
+        height: 27vh;
+        margin: auto;
+        padding: 5px;
+        background-color: rgb(238, 238, 238);
+        padding: 15px;
+        border-radius: 10px;
+    }
+    #pagar{
+        background-color: rgb(128,228,143);
+        cursor: pointer;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        font-weight: 600;
+        border: none;
+    }
+    #pagar:hover{
+        background-color: rgb(79, 170, 93);
+    }
+    input[type="checkbox"]{
+        accent-color: rgb(79, 170, 93);
+    }

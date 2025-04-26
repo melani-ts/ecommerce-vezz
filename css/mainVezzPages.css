@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.body-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/pry23.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Barra de navegación */
+.navbar {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  z-index: 999;
+  height: 10%;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.social-icons a:hover {
+  color: rgb(128, 228, 143);
+}
+
+/* Contenido general */
+.content {
+  padding-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.sections {
+  height: 80vh;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  margin: 5px 0 10px;
+}
+
+.m-container {
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+}
+
+.my-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  margin-top: 15px;
+  overflow-x: hidden;
+}
+
+.my-container img {
+  width: 19%;
+  margin: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.my-container img:hover,
+.img_products img:hover,
+#btn11:hover,
+#btn21:hover,
+.btn3 button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.span_center{
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  margin-top: 5px;
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+video {
+  opacity: 0.8;
+}
+
+.img_products {
+  width: 60%;
+  display: flex;
+  height: 12vh;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  align-content: center;
+  padding-left: 40px;
+}
+
+/* Botones principales */
+#btn11,
+#btn21 {
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 30px;
+}
+
+#btn11 {
+  left: 380px;
+  border: none;
+  background-color: rgb(128, 228, 143);
+}
+
+#btn21 {
+  left: 600px;
+  border: 2px solid rgb(128, 228, 143);
+  background-color: transparent;
+  color: white;
+}
+
+/* Botones de categoría */
+.btn3 button {
+  background-color: rgb(22, 183, 192);
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 15px;
+  font-weight: 500;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: rgb(128, 228, 143);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  margin: 10px;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Barra de texto deslizable */
+.slider-container {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: 2px;
+  color: white;
+}
+
+.slider-text {
+  position: absolute;
+  white-space: nowrap;
+  color: rgba(128, 228, 143, 0.548);
+  font-size: 14px;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
+
+/* Efecto gradiente en navbar */
+.linea-gradiente {
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0), #273a25);
+  background-size: 600% 100%;
+  animation: moverGradiente 10s linear infinite;
+}
+
+@keyframes moverGradiente {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 70%; }
+  100% { background-position: 50% 10%; }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icono_pagina2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/mainProducto.css">
+    <title>Producto - Vezz</title>
+
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="navbar">
+            <img src="../img/vez.png" alt="" height="100%">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="../pages/tienda.html"><i class="fas fa-box-open"></i> Tienda</a></li>
+                <li><a href="../index.html#ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
+                <li><a href="../pages/contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages/carrito.html" title="Carrito de Compras"><i class="fas fa-shopping-cart"></i> </a>
+                </li>
+                <li><a href="pages/ingresar_usuario.html" title="Iniciar Seccion"><i class="fas fa-sign-in-alt"></i></a>
+                </li>
+                <li><a href="../pages/registar_usuario.html" title="Resgistrarse"><i class="fas fa-user-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="c-20 contenedor-vertical">
+            <img src="../img/z6.jpg" alt="">
+            <img src="../img/z23.jpg" alt="">
+            <img src="../img/Z22.jpg" alt="">
+        </div>
+        <div class="c-50">
+            <div class="producto">
+                <img src="../img/z6.jpg" alt="" id="img_producto" width="100%" style="border-radius: 15px;">
+            </div>
+        </div>
+        <div class="c-30">
+            <span>Me encanta este producto</span>
+            <h4>NOMBRE DEL PRODUCTO</h4><br>
+            <span id="precio" style="font-size: 30px;font-weight: 900;">$35.000</span>
+            <br><br>
+            <span>Sin costos de importacion</span>
+            <hr>
+            <br>
+            <span><strong>Stok Disponible</strong></span>
+            <span>Cantidad: </span><span id="cantidad_disponible">-</span><br><br>
+            <span>Compra maxima ilimitada</span>
+            <br><br>
+            <button type="button" id="comprar">COMPRAR AHORA</button>
+            <button type="button"
+                style="background-color: rgba(255, 255, 255, 0);border: 2.5px solid rgb(63, 171, 79);">Agregar al
+                carrito</button>
+            <br><br>
+            <span>Marca - Proveedor: </span>
+            <br><br>
+            <span>
+                <li class="fas fa-arrow-left"></li> <strong> Devolucion Gratis.</strong> Tienes 30 dias desde que lo
+                recibes.
+            </span>
+            <br>
+            <span>
+                <li class="fas fa-shield-alt"></li><strong> Compra Protegida.</strong> recibe el producto que esperabas
+                o te devolvemos tu dinero
+            </span>
+            <br><br>
+            <p style="font-size: 14px;"><strong>1. Metodos de Pago</strong></p>
+            <br>
+            <img src="../img/visa.jpg" alt="" width="50px">
+            <img src="../img/master_card.jpg" alt="" width="50px">
+            <img src="../img/american.jpg" alt="" width="50px">
+            <img src="../img/pse.jpg" alt="" width="50px">
+            <br><br>
+            <p style="font-size: 14px;"><i class="fas fa-shield-alt" style="color:rgb(46, 137, 59);"></i>
+                <strong>Privacidad Segura</strong>
+            </p><br>
+            <p style="font-size: 13px;text-align: justify;">Proteger tu privacidad es muy importante para nosotros. Ten
+                la seguridad de que tu información se mantendrá segura y libre de riesgos. No vendemos tu información
+                personal por dinero y solo utilizaremos tu información de acuerdo con nuestra política de privacidad y
+                cookies para proporcionar y mejorar nuestros servicios.</p>
+            <br>
+        </div>
+    </div>
+    <div class="relacionados">
+        <h4>PRODUCTOS RELACIONADOS</h4>
+        <span>tambien te puede interesar alguno de estso articulos.</span>
+        <div>
+            <div class="card">
+                <img src="../img/z52.jpg" alt="Denim Jeans" width="100%">
+                <h1>Zapatos kk2</h1>
+                <h3 id="refe" class="price">$35.000</h3>
+                <hr>
+                <p>Descripcion del calzado</p>
+                <br>
+                <p><button>Agregar al Carrito</button></p>
+            </div>
+            <div class="card">
+                <img src="../img/z54.jpg" alt="Denim Jeans" width="100%">
+                <h1>Tailored Jeans</h1>
+                <h3 id="refe2" class="price">$35.000</h3>
+                <hr>
+                <p>Descripcion del calzado</p>
+                <br>
+                <p><button>Agregar al Carrito</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="relacionados">
+        <h4>DESCRIPCION</h4>
+        <p id="descripcion">Descripcion del calzado</p>
+    </div>
+    <div class="relacionados">
+        <h4>CRACTERISTICAS DEL PRODUCTO</h4>
+        <br>
+        <span>Ficha tecnica de nuestros productos</span>
+        <table id="t1">
+            <tr>
+                <td>Tallas Disponibles:</td>
+                <td id="tdisp"> - </td>
+            </tr>
+            <tr>
+                <td>Material Zuela:</td>
+                <td id="mzuela">-</td>
+            </tr>
+            <tr>
+                <td>Colores:</td>
+                <td id="colores">-</td>
+            </tr>
+            <tr>
+                <td>Tipo de Cierre:</td>
+                <td id="tcierre">-</td>
+            </tr>
+            <tr>
+                <td>Referencia:</td>
+                <td id="ref">-</td>
+            </tr>
+        </table>
+    </div>
+    <div class="relacionados">
+        <h4>PREGUNTAS Y RESPUESTAS</h4>
+        <button class="button3">Garantia</button>
+        <button class="button3">Disponibilidad</button>
+        <button class="button3">Me hacen descuentos por compras mayores</button>
+
+    </div>
+    <div class="relacionados">
+        <h4>VALORACION DEL PRODUCTO</h4>
+        <span>Estas valoraciones fueron dadas por clientes que adquirieron nuestro producto!</span><br>
+        <form class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+        </form>
+        <hr>
+    </div>
+</body>
+
+</html>

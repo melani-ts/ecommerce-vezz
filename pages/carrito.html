@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icono_pagina2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/mainCarrito.css">
+    <title>Carrito de Compras</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="../img/vez.png" alt="" height="100%">
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="../pages/tienda.html"><i class="fas fa-box-open"></i> Tienda</a></li>
+            <li><a href="../index.html#ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
+            <li><a href="../pages/contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+        <ul>
+            <li><a href="../pages/carrito.html" title="Carrito de Compras"><i class="fas fa-shopping-cart"></i> </a>
+            </li>
+            <li><a href="../pages/ingresar_usuario.html" title="Iniciar Seccion"><i class="fas fa-sign-in-alt"></i></a>
+            </li>
+            <li><a href="../pages/registar_usuario.html" title="Resgistrarse"><i class="fas fa-user-plus"></i></a></li>
+        </ul>
+    </div>
+    <div class="c_carrito">
+        <div class="container-70">
+            <h3>Mi Carrito de Compra</h3>
+            <br>
+            <p style="font-size: 16px;">Hola! Selecciona los productos que llevaras en esta ocasion, Si lo deseas llevar
+                todos, GENIAL, dale clic en llevar todos.</p>
+            <br>
+            <p style="font-size: 16px;"><input type="checkbox" name="llevarTodos" id="llevarTodos"> Llevarlos todos!</p>
+            <br>
+            <hr>
+            <br><br>
+
+            <div class="tarjeta_carrito">
+                <div
+                    style="width: 3%; display: flex;justify-content: center;align-items: center;justify-items: center;transform: scale(1.5);">
+                    <input type="checkbox" name="select" id="select" width="50px">
+                </div>
+                <div style="width: 20%;">
+                    <img id="img_product" src="../img/z32.jpg" alt="zapato elegido" height="100%">
+                </div>
+                <div style="width: 72%;justify-content: center;">
+                    <div>
+                        <h4>NOMBRE DEL PRODUCTO</h4>
+                        <p style="font-size: 14px;padding-bottom: 5px;">Detalle del producto</p>
+                    </div>
+                    <hr>
+                    <div style="display: flex;justify-content: baseline;padding-top: 10px;">
+                        <div style="width: 20%;">
+                            <p>Valor Unitario</p>
+                            <h4>$35.23</h4>
+                        </div>
+                        <div style="width: 60%;padding-left: 50px;">
+                            <label for="">Cantidad:</label><br>
+                            <input type="number" name="cantidad" id="cantidad" min="0" value="1" style="padding: 5px; ">
+                        </div>
+                        <div style="width: 20%">
+                            <h4>Subtotal</h4>
+                            <h4>$35.26</h4>
+                        </div>
+                    </div>
+                    <div style="padding-top: 10px;">
+                        <hr>
+                        <p style="font-size: 14px;padding-top: 5px;">Observacion alguna</p>
+                    </div>
+                </div>
+                <div
+                    style="width: 5%; display: flex;justify-content: center;align-items: center;justify-items: center;">
+                    <button style="padding: 2px; width: 30px;background: none;border: none;cursor: pointer;"><i
+                            class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- PAsarela de pagos -->
+        <div class="container-30">
+            <h4>Resumen del Pedido</h4>
+            <div>
+                <br>
+                <span style="float:left ;font-size: 14px;">Total de Articulos:</span>
+                <span style="float:right ;font-size: 14px;vertical-align: middle;" id="t_articulos">25</span>
+                <br><br>
+                <span style="float:left ;font-size: 14px;">Descuento Articulos:</span>
+                <span style="float:right ;font-size: 14px;vertical-align: middle;" id="descuento"><b>-$25.000</b></span>
+                <br><br>
+                <hr><br>
+
+                <span style="float:left ;font-size: 15px;"><b>Total</b></span>
+                <span style="float:right ;font-size: 15px;vertical-align: middle;" id="total"><b>$250.000</b></span>
+
+                <br><br>
+                <button id="pagar" type="button">PAGAR</button>
+                <br><br>
+                <p style="font-size: 13px;text-align: justify;"><i class="fas fa-exclamation-triangle"
+                        style="color: rgb(46, 137, 59);"></i> La disponibilidad y el precio de los artículos no están
+                    garantizados hasta que se finalice el pago.</p>
+                <br>
+                <p style="font-size: 13px; text-align: justify;"><i class="fas fa-lock"
+                        style="color:rgb(46, 137, 59);"></i> No se te cobrará hasta que revises este pedido en la página
+                    siguiente</p>
+                <br>
+                <p style="font-size: 14px;"><i class="fas fa-shield-alt" style="color:rgb(46, 137, 59);"></i>
+                    <strong>Opciones de pago seguro</strong>
+                </p><br>
+                <p style="font-size: 13px;text-align: justify;">Vezz se compromete a proteger su información de pago.
+                    Seguimos los estándares PCI DSS, utilizamos un cifrado sólido y realizamos revisiones periódicas de
+                    su sistema para proteger su privacidad.</p>
+                <br>
+                <p style="font-size: 14px;"><strong>1. Metodos de Pago</strong></p>
+                <br>
+                <img src="../img/visa.jpg" alt="" width="50px">
+                <img src="../img/master_card.jpg" alt="" width="50px">
+                <img src="../img/american.jpg" alt="" width="50px">
+                <img src="../img/pse.jpg" alt="" width="50px">
+                <br><br>
+                <p style="font-size: 14px;"><i class="fas fa-shield-alt" style="color:rgb(46, 137, 59);"></i>
+                    <strong>Privacidad Segura</strong>
+                </p><br>
+                <p style="font-size: 13px;text-align: justify;">Proteger tu privacidad es muy importante para nosotros.
+                    Ten la seguridad de que tu información se mantendrá segura y libre de riesgos. No vendemos tu
+                    información personal por dinero y solo utilizaremos tu información de acuerdo con nuestra política
+                    de privacidad y cookies para proporcionar y mejorar nuestros servicios.</p>
+                <br>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <script src="../javascrip/mainCarrito.js"></script>
+
+
+</body>
+
+</html>

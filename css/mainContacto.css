@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+position: fixed;
+top: 20px;
+width: 100%;
+background: rgba(0, 0, 0, 0.8); 
+padding: 15px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #fff;
+z-index: 999;
+height: 10%;
+}
+.navbar .logo {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+.navbar ul li a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+color: rgb(128,228,143);
+}
+
+.content {
+padding-top: 100px;
+text-align: center;
+color: white;
+}
+.linea-gradiente {
+width: 100%;
+height: 10vh;
+background: linear-gradient(90deg, rgb(0, 0, 0),rgb(0, 0, 0),  #273a25);
+background-size: 600% 100%;
+animation: moverGradiente 10s linear infinite;
+}
+.container-cont{
+display: flex;
+width: 100%;
+height: 70vh;
+margin-top: 120px;
+justify-content: center;
+}
+.forms{
+width: 40%;
+height: 100%;
+}
+form label{
+width: 100%;
+margin-top: 15px;
+font-family: 'Lato',Arial, Helvetica, sans-serif;
+font-weight: 900;
+padding: 5px;
+display: block;
+}
+.forms{
+width: 30%;
+height: 80%;
+margin-top: 20px;
+margin: 30px;
+}
+input[type="text"]{
+text-transform: uppercase;
+}
+form input:focus {
+border: 3px solid rgb(128,228,143); 
+outline: none;
+}
+form textarea:focus {
+border: 3px solid rgb(128,228,143); 
+outline: none;
+}
+form label,h3, span{
+color: white;
+}
+
+input[type="checkbox"]:checked {
+accent-color: rgb(128,228,143); 
+}
+input[type="text"],input[type="password"],input[type="email"],textarea{
+width: 100%;
+padding: 15px;
+margin-top: 5px;
+border-radius: 10px;
+border: 1px solid rgb(128,228,143);
+display: inline-block;
+background-color: #ffffff00;
+color: white;
+}
+input[type="checkbox"]{
+margin-top: 15px;
+}
+input[type="submit"]{
+margin-top: 15px;
+padding: 15px;
+background-color: rgb(128,228,143);
+text-align: center;
+border: none;
+width: 100%;
+border-radius: 10px;
+font-weight: 700;
+}
+input[type="submit"]:hover{
+background-color: rgb(63, 171, 79);
+cursor: pointer;
+}
+.linea-gradiente {
+width: 100%;
+height: 10vh;
+background: linear-gradient(90deg, rgb(0, 0, 0),rgb(0, 0, 0),  #273a25);
+background-size: 600% 100%;
+animation: moverGradiente 10s linear infinite;
+}
+
+@keyframes moverGradiente {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 70%;
+
+}
+100% {
+background-position: 50% 10%;
+
+}
+}
+.slider-container {
+width: 100%;
+height: 50px;
+overflow: hidden;
+margin-top: 20px;
+position: relative;
+top: 50px;
+}
+
+.slider-text {
+position: absolute;
+white-space: nowrap;
+color: white;
+font-size: 20px;
+animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+0% {
+left: 100%;
+}
+100% {
+left: -100%;
+}
+}
