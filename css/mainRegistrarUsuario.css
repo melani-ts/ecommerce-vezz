@@ -132,3 +132,41 @@ body, html {
 
       }
     }
+
+    @media (max-width: 480px) {
+      .navbar img, forms img{
+        display: none;
+      }
+
+      .navbar ul li a {
+        font-size: 0;
+      }
+    
+      .navbar ul li a i {
+        font-size: 20px; 
+      }
+
+      #registro{
+        display: none;
+      }
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+      .navbar img, forms img{
+        display: none;
+      }
+
+      .navbar ul li a {
+        font-size: 0;
+      }
+    
+      .navbar ul li a i {
+        font-size: 20px; 
+      }
+      .navbar {
+        padding: 15px 75px;
+      }
+      #registro{
+        display: none;
+      }
+    }

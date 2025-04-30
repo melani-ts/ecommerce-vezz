@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="../pages/carrito.html" title="Carrito de Compras"><i class="fas fa-shopping-cart"></i> </a>
                 </li>
-                <li><a href="pages/ingresar_usuario.html" title="Iniciar Seccion"><i class="fas fa-sign-in-alt"></i></a>
+                <li><a href="../pages/ingresar_usuario.html" title="Iniciar Seccion"><i class="fas fa-sign-in-alt"></i></a>
                 </li>
                 <li><a href="../pages/registar_usuario.html" title="Resgistrarse"><i class="fas fa-user-plus"></i></a>
                 </li>
@@ -33,62 +33,64 @@
         </div>
     </div>
     </div>
-    <div class="container">
-        <div class="c-20 contenedor-vertical">
-            <img src="../img/z6.jpg" alt="">
-            <img src="../img/z23.jpg" alt="">
-            <img src="../img/Z22.jpg" alt="">
+
+
+<div class="container">
+    <div class="c-20 contenedor-vertical" id="thumbnails">
+    </div>
+    <div class="c-50">
+        <div class="producto">
+        <img src="" alt="Producto seleccionado" id="img_producto" width="100%" style="border-radius: 15px;">
         </div>
-        <div class="c-50">
-            <div class="producto">
-                <img src="../img/z6.jpg" alt="" id="img_producto" width="100%" style="border-radius: 15px;">
-            </div>
-        </div>
-        <div class="c-30">
-            <span>Me encanta este producto</span>
-            <h4>NOMBRE DEL PRODUCTO</h4><br>
-            <span id="precio" style="font-size: 30px;font-weight: 900;">$35.000</span>
-            <br><br>
-            <span>Sin costos de importacion</span>
-            <hr>
-            <br>
-            <span><strong>Stok Disponible</strong></span>
-            <span>Cantidad: </span><span id="cantidad_disponible">-</span><br><br>
-            <span>Compra maxima ilimitada</span>
-            <br><br>
-            <button type="button" id="comprar">COMPRAR AHORA</button>
-            <button type="button"
-                style="background-color: rgba(255, 255, 255, 0);border: 2.5px solid rgb(63, 171, 79);">Agregar al
-                carrito</button>
-            <br><br>
-            <span>Marca - Proveedor: </span>
-            <br><br>
-            <span>
-                <li class="fas fa-arrow-left"></li> <strong> Devolucion Gratis.</strong> Tienes 30 dias desde que lo
-                recibes.
-            </span>
-            <br>
-            <span>
-                <li class="fas fa-shield-alt"></li><strong> Compra Protegida.</strong> recibe el producto que esperabas
-                o te devolvemos tu dinero
-            </span>
-            <br><br>
-            <p style="font-size: 14px;"><strong>1. Metodos de Pago</strong></p>
-            <br>
-            <img src="../img/visa.jpg" alt="" width="50px">
-            <img src="../img/master_card.jpg" alt="" width="50px">
-            <img src="../img/american.jpg" alt="" width="50px">
-            <img src="../img/pse.jpg" alt="" width="50px">
-            <br><br>
-            <p style="font-size: 14px;"><i class="fas fa-shield-alt" style="color:rgb(46, 137, 59);"></i>
-                <strong>Privacidad Segura</strong>
-            </p><br>
-            <p style="font-size: 13px;text-align: justify;">Proteger tu privacidad es muy importante para nosotros. Ten
-                la seguridad de que tu información se mantendrá segura y libre de riesgos. No vendemos tu información
-                personal por dinero y solo utilizaremos tu información de acuerdo con nuestra política de privacidad y
-                cookies para proporcionar y mejorar nuestros servicios.</p>
-            <br>
-        </div>
+    </div>
+    <div class="c-30">
+        <span>Me encanta este producto</span>
+        <h4>NOMBRE DEL PRODUCTO</h4><br>
+        <span id="precio" style="font-size: 30px;font-weight: 900;">$35.000</span>
+        <br><br>
+        <span>Sin costos de importacion</span>
+        <hr>
+        <br>
+        <span><strong>Stok Disponible</strong></span>
+        <span>Cantidad: </span><span id="cantidad_disponible">-</span><br><br>
+        <span>Compra maxima ilimitada</span>
+        <br><br>
+        <button type="button" id="comprar">COMPRAR AHORA</button>
+        <button type="button"
+            style="background-color: rgba(255, 255, 255, 0);border: 2.5px solid rgb(63, 171, 79);">Agregar al
+            carrito</button>
+        <br><br>
+        <span>Marca - Proveedor: </span>
+        <br><br>
+        <span>
+            <li class="fas fa-arrow-left"></li> <strong> Devolucion Gratis.</strong> Tienes 30 dias desde que lo
+            recibes.
+        </span>
+        <br>
+        <span>
+            <li class="fas fa-shield-alt"></li><strong> Compra Protegida.</strong> recibe el producto que esperabas
+            o te devolvemos tu dinero
+        </span>
+        <br><br>
+        <p style="font-size: 14px;"><strong>1. Metodos de Pago</strong></p>
+        <br>
+        <img src="../img/visa.jpg" alt="" width="50px">
+        <img src="../img/master_card.jpg" alt="" width="50px">
+        <img src="../img/american.jpg" alt="" width="50px">
+        <img src="../img/pse.jpg" alt="" width="50px">
+        <br><br>
+        <p style="font-size: 14px;"><i class="fas fa-shield-alt" style="color:rgb(46, 137, 59);"></i>
+            <strong>Privacidad Segura</strong>
+        </p><br>
+        <p style="font-size: 13px;text-align: justify;">Proteger tu privacidad es muy importante para nosotros. Ten
+            la seguridad de que tu información se mantendrá segura y libre de riesgos. No vendemos tu información
+            personal por dinero y solo utilizaremos tu información de acuerdo con nuestra política de privacidad y
+            cookies para proporcionar y mejorar nuestros servicios.</p>
+        <br>
+</div>
+
+    </div>
+    
     </div>
     <div class="relacionados">
         <h4>PRODUCTOS RELACIONADOS</h4>
@@ -164,6 +166,8 @@
         </form>
         <hr>
     </div>
+
+    <script src="../javascrip/mainProducto.js"></script>
 </body>
 
 </html>

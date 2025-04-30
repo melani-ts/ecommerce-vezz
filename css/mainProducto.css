@@ -2,18 +2,20 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body, html {
+    width: 100%;
     height: 100%;
     font-family: 'Lato', sans-serif;
 }
 
-/* Barra de navegación */
+
 .navbar {
 position: fixed;
 top: 20px;
 width: 100%;
-background: rgba(0, 0, 0, 0.8); /* Semitransparente */
+background: rgba(0, 0, 0, 0.8); 
 padding: 15px 30px;
 display: flex;
 justify-content: space-between;
@@ -197,3 +199,66 @@ padding: 16px;
 tr:nth-child(even) {
 background-color: #f2f2f2;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .c-20, .c-50, .c-30 {
+      width: 90%;
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .producto {
+      width: 100%;
+    }
+  
+    .producto img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: auto;
+    }
+  
+    .contenedor-vertical {
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .contenedor-vertical img {
+      width: 70px;
+      height: auto;
+    }
+
+    .navbar img{
+        display: none;
+    }
+
+    .navbar ul li a {
+        font-size: 0;
+      }
+    
+      .navbar ul li a i {
+        font-size: 20px; 
+      }
+
+      .button3{
+        width: 300px;
+      }
+      .relacionados{
+        padding: 0;
+      }
+
+      .card{
+        width: 90%;
+      }
+  }
+  
