@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 });
 
 function irATienda() {
-  window.location.href = '../pages/tienda.html';
+  window.location.href = 'pages/tienda.html';
 }
 
 function irAOfertas() {
