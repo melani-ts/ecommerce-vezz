@@ -116,7 +116,7 @@
 
               tarjeta.innerHTML = `
         <div style="width: 20%;">
-          <img id="img_product" src="../img/z32.jpg" alt="zapato elegido" height="90%">
+         <img id="img_product" src="${producto.imagen}" alt="${producto.nombre}" height="90%">
         </div>
         <div style="width: 72%;justify-content: center;">
           <div>
@@ -150,7 +150,6 @@
         </div>
       `;
 
-              // Agregar evento para eliminar la tarjeta
               const deleteButton = tarjeta.querySelector(".delete-btn");
               deleteButton.addEventListener("click", () => {
                 tarjeta.remove(); // Eliminar la tarjeta del DOM
@@ -219,7 +218,7 @@
           >
 
           <br /><br />
-          <button id="pagar" type="button">PAGAR</button>
+         <a href="./pagos.html"><button id="pagar" type="button">PAGAR</button></a>
           <br /><br />
           <p style="font-size: 13px; text-align: justify">
             <i
